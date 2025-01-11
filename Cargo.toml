@@ -1,0 +1,25 @@
+[workspace]
+members = [
+    "claude",
+    "claude-config",
+    "claude-common"
+]
+
+[workspace.package]
+version = "0.1.0"
+edition = "2021"
+authors = ["James Day <james@day.net.nz>"]
+license = "MIT"
+repository = "https://github.com/jarmez/claude-cli"
+
+[workspace.dependencies]
+tokio = { version = "1.35", features = ["full"] }
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+anyhow = "1.0"
+thiserror = "1.0"
+clap = { version = "4.4", features = ["derive"] }
+dirs = "5.0"
+anthropic = "0.1"  # For Claude API
+tracing = "0.1"
+tracing-subscriber = "0.3"
