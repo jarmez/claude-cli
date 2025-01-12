@@ -1,0 +1,15 @@
+Source: claude-cli
+Section: utils
+Priority: optional
+Maintainer: James Day <james@day.net.nz>
+Build-Depends: debhelper-compat (= 13), cargo, rustc
+Standards-Version: 4.5.1
+Homepage: https://github.com/jarmez/claude-cli
+
+Package: claude-cli
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, libssl1.1 | libssl3
+Description: Command line interface for the Claude AI assistant
+ A command-line interface for interacting with the Claude AI assistant.
+ Features Vim/Neovim-like interaction, session management, and
+ support for multiple output formats.

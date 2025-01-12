@@ -1,0 +1,39 @@
+claude-cli/
+├── Cargo.toml                 # Workspace configuration
+├── .gitignore
+├── README.md                  # Project documentation
+├── examples/                  # Example configurations and usage
+│   ├── config.lua            # Example Neovim configuration
+│   └── .claude.vim           # Example Vim configuration
+├── claude-common/            # Shared library code
+│   ├── Cargo.toml
+│   └── src/
+│       ├── lib.rs            # Library exports and error types
+│       ├── config/           # Configuration management
+│       │   ├── mod.rs
+│       │   ├── lua.rs        # Lua config support
+│       │   └── vim.rs        # Vim config support
+│       ├── api.rs            # Claude API client
+│       ├── types.rs          # Shared type definitions
+│       └── terminal.rs       # Terminal handling utilities
+├── claude/                   # Main CLI application
+│   ├── Cargo.toml
+│   └── src/
+│       ├── main.rs           # Entry point
+│       ├── repl/             # Interactive mode
+│       │   ├── mod.rs
+│       │   ├── session.rs    # Session management
+│       │   ├── commands.rs   # Command handling
+│       │   └── display.rs    # Output formatting
+│       └── commands/         # CLI commands
+│           ├── mod.rs
+│           └── single.rs     # Single message mode
+├── claude-config/           # Configuration utility
+│   ├── Cargo.toml
+│   └── src/
+│       └── main.rs          # Configuration tool
+└── docs/                    # Documentation
+    ├── cli.md              # CLI usage
+    ├── config.md           # Configuration guide
+    ├── vim.md             # Vim/Neovim integration
+    └── development.md     # Development guide
