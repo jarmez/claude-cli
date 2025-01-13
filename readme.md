@@ -1,6 +1,6 @@
 # Claude CLI
 * Currently in testing, not ready for general use, you are welcome to fork, compile and test, and provide feedback.
-* Currently working on integating MCP server configuration for custom extensibility.
+* Currently working on integating MCP server configuration for custom extensibility - the end goal will be to create my own MCP servers for security testing.
 
 A command-line interface for the Claude AI assistant with Vim/Neovim-like interaction.
 
