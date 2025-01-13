@@ -1,4 +1,5 @@
 # Claude CLI
+* Currently in testing, not ready for general use *
 
 A command-line interface for the Claude AI assistant with Vim/Neovim-like interaction.
 
