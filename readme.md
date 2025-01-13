@@ -1,7 +1,9 @@
 # Claude CLI
-* Currently in testing, not ready for general use *
+* Currently in testing, not ready for general use, you are welcome to fork, compile and test, and provide feedback.
+* Currently working on integating MCP server configuration for custom extensibility.
 
 A command-line interface for the Claude AI assistant with Vim/Neovim-like interaction.
+
 
 ## Features
 
@@ -9,7 +11,7 @@ A command-line interface for the Claude AI assistant with Vim/Neovim-like intera
 - Single command execution mode
 - Multiple output formats (txt, json, csv)
 - Vim/Neovim friendly interface
-- Configurable via Lua or Vimscript
+- Configurable via Lua or vimscript
 - Session management and history
 - Comprehensive logging
 
@@ -60,8 +62,6 @@ In interactive mode, use Vim-style commands:
 
 Default configuration locations:
 - Claude CLI: `~/.config/claude-cli/config.json`
-- Neovim: `~/.config/nvim/lua/claude/config.lua`
-- Vim: `~/.vimrc` or `~/.claude.vim`
 
 ## Logging
 
